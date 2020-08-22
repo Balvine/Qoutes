@@ -6,14 +6,15 @@
   </div>
   <hr>
 
-  <div class="row">
-      <div class="-col-md-6">
-          <div *ngfor='let qoute of qoutes; let i = index'>
-              <div>
-                  <h6 class="card-body" id={{i}} appStrikethrough>{{quote.name}} posted on {{quote.completeDate|timeAgo}}</h6>
-                  <button (click)='toggleDetail(i)' class="btn btn-primary">CHECK HERE</button>
-              </div>
-          </div>
-      </div>
-  </div>
   
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quote of quote;let i = index'>
+        <div>
+          <h6 class="card-body" id={{i}} appStrikethrough>{{quote.name}} posted on {{quote.completeDate|timeAgo}}</h6>
+          <button (click)='toggleDetail(i)' class="btn btn-primary">Check here</button>
+        </div><br>
+
+      </div>
+    </div>
+   
