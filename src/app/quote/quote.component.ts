@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{Quote} from '../quote';
+import { Quote } from '../quote';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
@@ -7,36 +7,36 @@ import{Quote} from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-  quote:Quote[];
-  toggleDetail(index){
+  quote: Quote[]= [
+    new Quote(1, 'Do what you can, with what you have, where you are', 'Theodore Roosevelt', new Date(2019, 5, 14)),
+    new Quote(2, 'If you cannot do great things, do small things in a great way', 'Napoleon Hill', new Date(2020, 5, 14)),
+    new Quote(3, 'It is never too late to be what you might have been', 'George Eliot', new Date(2019, 1, 4))
+  ];
+
+
+
+  addNewQuote(quote) {
+    let quoteLength = this.quote.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quote.push(quote)
+  }
+
+  toggleDetail(index) {
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
-  
-  deleteQuote(isComplete, index){
+
+  deleteQuote(isComplete, index) {
     if (isComplete) {
       let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].name}?`)
 
-      if (toDelete){
-        this.quote.splice(index,1)
+      if (toDelete) {
+        this.quote.splice(index, 1)
       }
     }
   }
 
-  constructor(){
-    this.quote=[
-      new Quote(1,'Life is drama play your part.','Ongati kebaso',new Date(2019,5,14)),
-      new Quote(2,'The problem with Africa is that people with ideas have no powers and people with powers have no ideas',' PLO Lumumba',new Date(2019,1,14)),
-      new Quote(3,'There is no hygiene in African plitics','Plo Lumumba',new Date(2019,3,14)),
-      
-    ];
-    
-  } 
-  addNewQuote(quote){
-    let quoteLength = this.quote.length;
-    quote.id = quoteLength+1;
-    quote.completeDate = new Date(quote.completeDate)
-    this.quote.push(quote)
-  }
+
 
   ngOnInit() {
   }

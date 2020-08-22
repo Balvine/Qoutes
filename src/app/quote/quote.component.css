@@ -2,24 +2,19 @@
     background-color:#e0d5d59e;
       border: 1px solid;
       padding: 70px;
-      box-shadow: 2px 4px;
       font-size: 25px;
       font-family: pacifico,cursive;
       padding:20px;
   }
   
   h1{
-      font-size: 100px;
-      font-family: 'Spicy Rice', cursive;
+      font-size: 20px;
       text-align: center;
-      border-bottom: 2px solid black;
-      padding: 10px;
-      text-shadow:0 10px white;
+     
   }
   
   .jumbotron{
-      border-radius: 30px;
-      background-color:rgb(129, 129, 16);
+      font-size: 20px;
+      background-color:gainsboro;
+  
   }
-  
-  
