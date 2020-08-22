@@ -1,8 +1,6 @@
-h2{
-    text-align: center;
+.jumbotron{
     font-size: 30px;
-    margin-bottom:40px;
-    margin-left: 20px;
+    background-color: aqua;
 }
 p{
     text-align: center;
