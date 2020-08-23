@@ -8,12 +8,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quote: Quote[]= [
-    new Quote(1, 'Do what you can, with what you have, where you are', 'Theodore Roosevelt', new Date(2019, 5, 14)),
-    new Quote(2, 'If you cannot do great things, do small things in a great way', 'Napoleon Hill', new Date(2020, 5, 14)),
-    new Quote(3, 'It is never too late to be what you might have been', 'George Eliot', new Date(2019, 1, 4))
+    new Quote(1, 'Do what you can, with what you have, where you are', 'Theodore Roosevelt', new Date(2019, 5, 14),1),
+    new Quote(2, 'If you cannot do great things, do small things in a great way', 'Napoleon Hill', new Date(2020, 5, 14),1),
+    new Quote(3, 'It is never too late to be what you might have been', 'George Eliot', new Date(2019, 1, 4),1)
   ];
 
-
+   
 
   addNewQuote(quote) {
     let quoteLength = this.quote.length;
@@ -25,6 +25,10 @@ export class QuoteComponent implements OnInit {
   toggleDetail(index) {
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
+
+upVote(index){
+  this.quote[index].like +=1;
+}
 
   deleteQuote(isComplete, index) {
     if (isComplete) {
