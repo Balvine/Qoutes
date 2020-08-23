@@ -27,7 +27,8 @@ export class QuoteComponent implements OnInit {
   }
 
 upVote(index){
-  this.quote[index].like +=1;
+  index.like ++;
+  // console.log(index)
 }
 
   deleteQuote(isComplete, index) {
