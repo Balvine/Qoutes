@@ -2,7 +2,9 @@
         <p>{{quote.description}} </p>
         <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete<i class="fa fa-trash" aria-hidden="true"></i> </button>
          
-        <button (click) ="likebuttonclick(quote)" class="btn btn-success">like</button><span>  {{quote.like}}</span>
+        <button (click) ="likebuttonclick(quote)"  class="btn btn-success"> like</button><span>  {{quote.like}}</span>
+
+        <button (click) ="dislikebuttonclick(quote)"  class="btn btn-info">  dislike</button><span>  {{quote.dislike}}</span>
 
 
 
