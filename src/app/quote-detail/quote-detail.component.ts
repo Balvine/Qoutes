@@ -20,10 +20,10 @@ export class QuoteDetailComponent implements OnInit {
  likebuttonclick(quote){
  this.upVote.emit(quote);
  
-// }
-//   dislikebuttonclick(quote){
-//   this.downVote.emit(quote)
-// }
+}
+  dislikebuttonclick(quote){
+  this.downVote.emit(quote)
+}
   constructor() { }
 
   ngOnInit() {
