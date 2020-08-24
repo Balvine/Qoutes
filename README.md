@@ -19,7 +19,7 @@ If you want to access my website go to my git hub page and click on the  below (
 
  [Link to my github page. ](https://github.com/Balvine/Qoutes)
 
-[link to my project]()
+[link to my project](http://balvine.github.io/Quotes/)
 
 ## License and Copyright information.
  -
