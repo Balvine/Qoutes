@@ -31,7 +31,7 @@ upVote(index){
   // console.log(index)
 }
 downVote(index){
-  index.dislike --;
+  index.dislike ++;
 }
 
   deleteQuote(isComplete, index) {
