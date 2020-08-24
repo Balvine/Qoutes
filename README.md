@@ -23,7 +23,7 @@ If you want to access my website go to my git hub page and click on the  below (
 
 ## License and Copyright information.
  -
- [![License: MIT] ()
+ [![License: MIT] (https://github.com/Balvine/Qoutes/new/master)
 
 
  MIT License
